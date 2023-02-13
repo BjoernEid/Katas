@@ -9,4 +9,9 @@ public class FizzBuzzTest {
         assertEquals("2", Fizzbuzz.toString(2));
         assertEquals("4", Fizzbuzz.toString(4));
     }
+
+    @Test
+    public void fizz() {
+        assertEquals("Fizz", Fizzbuzz.toString(3));
+    }
 }
