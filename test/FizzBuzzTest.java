@@ -23,4 +23,9 @@ public class FizzBuzzTest {
         assertEquals("Buzz", Fizzbuzz.toString(10));
         assertEquals("Buzz", Fizzbuzz.toString(20));
     }
+
+    @Test
+    public void fizzBuzz() {
+        assertEquals("FizzBuzz", Fizzbuzz.toString(15));
+    }
 }
