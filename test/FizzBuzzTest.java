@@ -7,5 +7,6 @@ public class FizzBuzzTest {
     public void no_fizzbuzz() {
         assertEquals("1", Fizzbuzz.toString(1));
         assertEquals("2", Fizzbuzz.toString(2));
+        assertEquals("4", Fizzbuzz.toString(4));
     }
 }
