@@ -20,5 +20,6 @@ public class FizzBuzzTest {
     @Test
     public void buzz() {
         assertEquals("Buzz", Fizzbuzz.toString(5));
+        assertEquals("Buzz", Fizzbuzz.toString(10));
     }
 }
