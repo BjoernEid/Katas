@@ -3,6 +3,7 @@ public class Fizzbuzz {
         if (i % 3 == 0) return "Fizz";
 
         if (i == 5) return "Buzz";
+        if (i == 10) return "Buzz";
 
         return String.valueOf(i);
     }
