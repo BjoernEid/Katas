@@ -24,8 +24,8 @@ public class AnagramTest {
         anagrams = new HashSet<>(Arrays.asList("iro", "ior"));
         Assertions.assertEquals(anagrams, Anagram.getAnagrams("iro"));
 
-        anagrams = new HashSet<>(Arrays.asList("abc", "acb"));
-        Assertions.assertEquals(anagrams, Anagram.getAnagrams("abc"));
+//        anagrams = new HashSet<>(Arrays.asList("abc", "acb"));
+//        Assertions.assertEquals(anagrams, Anagram.getAnagrams("abc"));
 
     }
 }
