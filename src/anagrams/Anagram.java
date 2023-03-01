@@ -14,7 +14,22 @@ public class Anagram {
             return new HashSet<>(Arrays.asList(word, secondChar.concat(firstChar)));
         }
 
-        return getPermutationsForLast2Chars(word);
+        Set<String> result = new HashSet();
+        result.addAll(getPermutationsForLast2Chars(word));
+
+        String firstChar = word.substring(0, 1);
+        String restChar = word.substring(1, word.length());
+        String rotatedWord = restChar.concat(firstChar);
+
+        result.addAll(getPermutationsForLast2Chars(rotatedWord));
+
+        firstChar = rotatedWord.substring(0, 1);
+        restChar = rotatedWord.substring(1, word.length());
+        rotatedWord = restChar.concat(firstChar);
+
+        result.addAll(getPermutationsForLast2Chars(rotatedWord));
+
+        return result;
     }
 
     private static Set<String> getPermutationsForLast2Chars(String word) {

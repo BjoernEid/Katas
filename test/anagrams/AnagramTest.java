@@ -22,10 +22,21 @@ public class AnagramTest {
         Assertions.assertEquals(anagrams, Anagram.getAnagrams("ro"));
 
         anagrams = new HashSet<>(Arrays.asList("iro", "ior"));
+        Assertions.assertTrue(Anagram.getAnagrams("iro").containsAll(anagrams));
+
+        anagrams = new HashSet<>(Arrays.asList("abc", "acb"));
+        Assertions.assertTrue(Anagram.getAnagrams("abc").containsAll(anagrams));
+    }
+
+    @Test
+    void wordWith3CharsReturns6Anagrams() {
+        Set<String> anagrams = new HashSet<>(Arrays.asList("iro", "ior", "roi", "rio", "ori", "oir"));
         Assertions.assertEquals(anagrams, Anagram.getAnagrams("iro"));
 
-//        anagrams = new HashSet<>(Arrays.asList("abc", "acb"));
-//        Assertions.assertEquals(anagrams, Anagram.getAnagrams("abc"));
+    }
+
+    @Test
+    void wordWith4CharsReturns24Anagrams() {
 
     }
 }
