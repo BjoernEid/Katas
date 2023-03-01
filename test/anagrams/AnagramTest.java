@@ -29,14 +29,33 @@ public class AnagramTest {
     }
 
     @Test
-    void wordWith3CharsReturns6Anagrams() {
+    void wordWith3CharsReturnsAllAnagrams() {
         Set<String> anagrams = new HashSet<>(Arrays.asList("iro", "ior", "roi", "rio", "ori", "oir"));
         Assertions.assertEquals(anagrams, Anagram.getAnagrams("iro"));
-
     }
 
     @Test
-    void wordWith4CharsReturns24Anagrams() {
-
+    void returnsAllAnagramsForTheLastThreeCharacters() {
+        Set<String> anagrams = new HashSet<>(Arrays.asList(
+            "biro", "bior", "brio", "broi", "boir", "bori"
+        ));
+        System.out.println(Anagram.getAnagrams("biro"));
+        Assertions.assertTrue(Anagram.getAnagrams("biro").containsAll(anagrams));
     }
+
+//    Wir nehmen an, dass die Anzahl der Permutationen Fakultaet von Leange des Wortes ist.
+//    4*3*2*1 = 24
+//    5*4*3*2*1 = 120
+
+//    @Test
+//    void wordWith4CharsReturns24Anagrams() {
+//        Set<String> anagrams = new HashSet<>(Arrays.asList(
+//                "biro", "bior", "brio", "broi", "boir", "bori",
+//                "ibro", "ibor", "irbo", "irob", "iobr", "iorb",
+//                "rbio", "rboi", "ribo", "riob", "roib", "robi",
+//                "obir", "obri", "oibr", "oirb", "orbi", "orib"
+//        ));
+//        System.out.println(Anagram.getAnagrams("biro"));
+//        Assertions.assertTrue(Anagram.getAnagrams("biro").containsAll(anagrams));
+//    }
 }

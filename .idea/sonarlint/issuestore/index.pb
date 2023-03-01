@@ -1,0 +1,35 @@
+
+9
+	Katas.iml,4/d/4d36350c3de30d0e5eed282c6ef52fe15cbe7dc5
+j
+:.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_1.xml,3/0/300b2b98472be8312938aa168d64333ba019b777
+p
+@.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml,4/8/482fe248ab09a0c5ea5fe0919a983dada38954e7
+p
+@.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_11_1.xml,d/8/d87bb7f4fe8d79add27f39e5f72cb4a88699880b
+p
+@.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_5_2.xml,7/8/783df73dfd4aab6e1bbc4ad18ebadeae6ffca3f4
+j
+:.idea/libraries/Maven__org_assertj_assertj_core_3_22_0.xml,6/5/651e2871289348243a50f60c86cb85e417836346
+w
+G.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml,0/6/063a782fb99267553a9a09f8377de690b0f8e18a
+t
+D.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml,1/f/1f32c4e97004076ac7e5b7cebc508db91bbb9228
+z
+J.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml,0/7/07b45662e7215cfb2a2461b0df8433077ccd7d7d
+w
+G.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_5_2.xml,f/3/f327cc313f29b08696a82daf03c70ab88335f92b
+j
+:.idea/libraries/Maven__org_mockito_mockito_core_3_11_0.xml,b/a/baed590ab8b7f2dedaedfe37a65249c410905127
+y
+I.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml,2/d/2d879485abb08850ad0b49a803f9632d4bd7138b
+j
+:.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml,8/5/858474d8d215ec25f84b3be6f80418553ae8d1df
+f
+6.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml,d/f/df4d02cb554f878acf5c0ba8e1f4d6f0831d4813
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+O
+test/fizzbuzz/FizzBuzzTest.java,4/6/46257e9b9ed52d24b55c1d0440c46defe97ccffc
+J
+src/fizzbuzz/Fizzbuzz.java,8/1/81b3ef17b9c8f5a0db7662c3b1a65463b2963014
