@@ -39,7 +39,7 @@ public class AnagramTest {
         Set<String> anagrams = new HashSet<>(Arrays.asList(
             "biro", "bior", "brio", "broi", "boir", "bori"
         ));
-        System.out.println(Anagram.getAnagrams("biro"));
+        // System.out.println(Anagram.getAnagrams("biro"));
         Assertions.assertTrue(Anagram.getAnagrams("biro").containsAll(anagrams));
     }
 
@@ -47,15 +47,20 @@ public class AnagramTest {
 //    4*3*2*1 = 24
 //    5*4*3*2*1 = 120
 
-//    @Test
-//    void wordWith4CharsReturns24Anagrams() {
-//        Set<String> anagrams = new HashSet<>(Arrays.asList(
-//                "biro", "bior", "brio", "broi", "boir", "bori",
-//                "ibro", "ibor", "irbo", "irob", "iobr", "iorb",
-//                "rbio", "rboi", "ribo", "riob", "roib", "robi",
-//                "obir", "obri", "oibr", "oirb", "orbi", "orib"
-//        ));
-//        System.out.println(Anagram.getAnagrams("biro"));
-//        Assertions.assertTrue(Anagram.getAnagrams("biro").containsAll(anagrams));
-//    }
+    @Test
+    void wordWith4CharsReturns24Anagrams() {
+        Set<String> anagrams = new HashSet<>(Arrays.asList(
+                "biro", "bior", "brio", "broi", "boir", "bori",
+                "ibro", "ibor", "irbo", "irob", "iobr", "iorb",
+                "rbio", "rboi", "ribo", "riob", "roib", "robi",
+                "obir", "obri", "oibr", "oirb", "orbi", "orib"
+        ));
+        // System.out.println(Anagram.getAnagrams("biro"));
+        Assertions.assertTrue(Anagram.getAnagrams("biro").containsAll(anagrams));
+    }
+
+    @Test
+    void fiveCharsWordHas120Anagrams() {
+        Assertions.assertEquals(120, Anagram.getAnagrams("abcde").size());
+    }
 }
