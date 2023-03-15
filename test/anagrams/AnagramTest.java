@@ -26,5 +26,19 @@ public class AnagramTest {
         Assertions.assertEquals(Set.of("iro","ior","roi","rio","ori","oir"), Anagrams.getAllAnagrams("iro"));
     }
 
+    @Test
+    void anagramFor4CharacterWord() {
+        Assertions.assertEquals(Set.of(
+                "biro", "bior", "brio", "broi", "boir", "bori",
+                "ibro", "ibor", "irbo", "irob", "iobr", "iorb",
+                "rbio", "rboi", "ribo", "riob", "roib", "robi",
+                "obir", "obri", "oibr", "oirb", "orbi", "orib"
+                ), Anagrams.getAllAnagrams("biro"));
+    }
 
+    @Test
+    void anagramForWordsWithMoreThan4Characters() {
+        Assertions.assertEquals(120, Anagrams.getAllAnagrams("abcde").size());
+        Assertions.assertEquals(720, Anagrams.getAllAnagrams("abcdef").size());
+    }
 }
