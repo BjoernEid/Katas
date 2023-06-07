@@ -19,7 +19,10 @@ import org.junit.jupiter.api.Test;
 
 public class ArabicToRomanTest {
   @Test
-  public void testSingle() {
+  public void testSingleNumerals() {
     Assertions.assertEquals("III", ArabicToRoman.convert(3));
+    Assertions.assertEquals("V", ArabicToRoman.convert(5));
+    Assertions.assertEquals("XX", ArabicToRoman.convert(20));
+    Assertions.assertEquals("MMM", ArabicToRoman.convert(3000));
   }
 }
