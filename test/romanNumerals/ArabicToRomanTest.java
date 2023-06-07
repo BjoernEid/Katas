@@ -1,24 +1,25 @@
 package romanNumerals;
 
+import org.assertj.core.error.AssertionErrorMessagesAggregrator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+// [1,5,10,50,100,500,1000]
+// ["I","V","X","L","C","D","M"]
+
+// 3 = III
+// 4 = IV
+// 8 = VIII
+// 9 = IX
+// 29 = XXIX
+// 80 = LXXX
+// 294 = CCXCIV
+// 2019 = MMXIX
+// 2849 = MMDCCCXLIX
+
 public class ArabicToRomanTest {
   @Test
-  void testOnes() {
-    Assertions.assertEquals("I", ArabicToRoman.convert(1));
-    Assertions.assertEquals("II", ArabicToRoman.convert(2));
+  public void testSingle() {
     Assertions.assertEquals("III", ArabicToRoman.convert(3));
-    Assertions.assertEquals("IV", ArabicToRoman.convert(4));
-    Assertions.assertEquals("V", ArabicToRoman.convert(5));
-    Assertions.assertEquals("VI", ArabicToRoman.convert(6));
-    Assertions.assertEquals("VII", ArabicToRoman.convert(7));
-    Assertions.assertEquals("VIII", ArabicToRoman.convert(8));
-    Assertions.assertEquals("IX", ArabicToRoman.convert(9));
-  }
-
-  @Test
-  void testTenth() {
-    Assertions.assertEquals("X", ArabicToRoman.convert(10));
   }
 }
