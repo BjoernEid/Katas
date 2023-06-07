@@ -33,3 +33,7 @@ O
 test/fizzbuzz/FizzBuzzTest.java,4/6/46257e9b9ed52d24b55c1d0440c46defe97ccffc
 J
 src/fizzbuzz/Fizzbuzz.java,8/1/81b3ef17b9c8f5a0db7662c3b1a65463b2963014
+N
+test/anagrams/AnagramTest.java,b/b/bb27309352c2f02eddfedf140c84502d7be44a5b
+J
+src/anagrams/Anagrams.java,1/f/1fc8c42dacd9f2def87daeada25f654d54357aba
