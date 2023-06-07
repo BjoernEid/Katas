@@ -25,4 +25,31 @@ public class ArabicToRomanTest {
     Assertions.assertEquals("XX", ArabicToRoman.convert(20));
     Assertions.assertEquals("MMM", ArabicToRoman.convert(3000));
   }
+
+  @Test
+  public void testHigherNumbers() {
+    Assertions.assertEquals("VIII", ArabicToRoman.convert(8));
+    Assertions.assertEquals("XVIII", ArabicToRoman.convert(18));
+    Assertions.assertEquals("XI", ArabicToRoman.convert(11));
+    Assertions.assertEquals("MDCLXVIII", ArabicToRoman.convert(1668));
+  }
+
+  @Test
+  public void testLowerNumbers() {
+    Assertions.assertEquals("IV", ArabicToRoman.convert(4));
+    Assertions.assertEquals("IX", ArabicToRoman.convert(9));
+    Assertions.assertEquals("XL", ArabicToRoman.convert(40));
+    Assertions.assertEquals("XLIX", ArabicToRoman.convert(49));
+    Assertions.assertEquals("CMXLIX", ArabicToRoman.convert(949));
+
+  }
+
+  @Test
+  public void testCombinedNumbers() {
+    Assertions.assertEquals("CCXCIV", ArabicToRoman.convert(294));
+    Assertions.assertEquals("MMXIX", ArabicToRoman.convert(2019));
+    Assertions.assertEquals("MMDCCCXLIX", ArabicToRoman.convert(2849));
+
+  }
+
 }
