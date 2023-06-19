@@ -1,4 +1,4 @@
-package TicTacToe;
+package ticTacToe;
 
 public class TicTacToe {
     private Player lastPlayer = Player.O;
@@ -7,5 +7,12 @@ public class TicTacToe {
         if (lastPlayer.equals(player)) {
             throw new InvalidPlayerException();
         }
+
+        // implementation here ...
+        togglePlayer(player);
+    }
+
+    private void togglePlayer(Player player) {
+        lastPlayer = player;
     }
 }
