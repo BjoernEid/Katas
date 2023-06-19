@@ -25,4 +25,17 @@ public class TicTacToeTest {
 
         Assertions.assertThrows(InvalidMoveException.class, ()->game.makeMove(Position.Center, Player.O));
     }
+
+    @Test
+    public void threeInAHorizontalRowWins() throws Exception {
+        TicTacToe game = new TicTacToe();
+        game.makeMove(Position.Left, Player.X);
+        game.makeMove(Position.UpperLeft, Player.O);
+        game.makeMove(Position.Right, Player.X);
+        game.makeMove(Position.UpperRight, Player.O);
+
+        Assertions.assertThrows(
+                GameWonException.class, () -> game.makeMove(Position.Center, Player.X));
+    }
+
 }
