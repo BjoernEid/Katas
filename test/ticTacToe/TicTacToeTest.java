@@ -10,16 +10,16 @@ public class TicTacToeTest {
         Assertions.assertThrows(InvalidPlayerException.class, ()->game.makeMove(Position.Center, Player.O));
     }
 
-    @Test
-    public void oGoesNext() throws InvalidPlayerException {
+  @Test
+  public void oGoesNext() throws Exception {
         TicTacToe game = new TicTacToe();
         game.makeMove(Position.UpperLeft, Player.X);
 
         Assertions.assertThrows(InvalidPlayerException.class, ()->game.makeMove(Position.Center, Player.X));
     }
 
-    @Test
-    public void playerCannotPlayOnPlayedPosition() throws InvalidPlayerException {
+  @Test
+  public void playerCannotPlayOnPlayedPosition() throws Exception {
         TicTacToe game = new TicTacToe();
         game.makeMove(Position.Center, Player.X);
 
