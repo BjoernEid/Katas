@@ -7,7 +7,7 @@ public enum Position {
     Left,
     Center,
     Right,
-    Lowerleft,
+    LowerLeft,
     LowerCenter,
     LowerRight
 }
